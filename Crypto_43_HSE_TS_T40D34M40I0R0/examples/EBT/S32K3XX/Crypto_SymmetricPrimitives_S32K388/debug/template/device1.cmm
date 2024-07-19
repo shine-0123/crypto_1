@@ -1,0 +1,89 @@
+;   Copyright 2020 - 2023 NXP
+;
+;   NXP Confidential. This software is owned or controlled by NXP and may only be
+;   used strictly in accordance with the applicable license terms. By expressly
+;   accepting such terms or by downloading, installing, activating and/or otherwise
+;   using the software, you are agreeing that you have read, and that you agree to
+;   comply with and are bound by, such license terms. If you do not agree to be
+;   bound by the applicable license terms, then you may not retain, install,
+;   activate or otherwise use the software.
+;=================================================================================================*/
+
+;  This file contains sample code only. It is not part of the production code deliverables.
+
+
+LOCAL &load_to
+LOCAL &elf_file
+LOCAL &load_params
+LOCAL &core_no
+LOCAL &multicore
+LOCAL &core_list
+LOCAL &hse_available
+LOCAL &custom_param
+
+ENTRY &load_to &elf_file &load_params &core_no &multicore &core_list &custom_param
+
+&hse_available=0
+
+
+
+;=========================================================================
+; System settings
+;=========================================================================
+IF !SYStem.Up()
+(
+    PRINT %S "### CPU type: CortexM7"
+    SYStem.CPU CortexM7
+    sys.config core 0x4
+    PRINT %S "### Attaching to the simulation ..."
+    SYStem.Mode Attach
+    ;setup.updateRate 100.ms
+    PRINT %S "### Disable the TRACE method"
+    TRACE.Disable
+    SYStem.Option DisMode THUMB
+
+)
+
+Break.direct
+Break
+;=========================================================================
+; set-up system clock initialization
+;=========================================================================
+
+;=========================================================================
+; RAM initialization
+;=========================================================================
+; Commented out - VDK does not currently support TCMs
+
+
+;=========================================================================
+; LOAD the code and symbols
+;=========================================================================
+
+PER.Set.simple ESD:0xE000ED08 %Long 0x600800
+Data.Set SD:0x600800 %LE %Long 0x2047DC00
+Data.Set SD:0x600804 %LE %Long 0x00600C21
+Data.Set SD:0x600808 %LE %Long 0x00605E95
+
+Data.Assemble ST:0x600C20  cpsid i
+Data.Assemble ST:0x600C22  mov.w r0,#0x0
+Data.Assemble ,               mov.w r1,#0x0
+Data.Assemble ,               mov.w r2,#0x0
+Data.Assemble ,               mov.w r3,#0x0
+Data.Assemble ,               mov.w r4,#0x0
+Data.Assemble ,               mov.w r5,#0x0
+Data.Assemble ,               b 0x600C22
+R.S PC 0x600C20
+
+
+
+;Load application
+;make core run for a while in loop before loading elf to wait for VDK preparation
+ON.ERROR.continue
+go
+wait 2000.ms
+break
+ON.ERROR.default
+Data.Load.Elf &elf_file SD:
+
+ENDDO

@@ -1,0 +1,22 @@
+; Environment variables
+OS=
+ID=T32
+SYS=C:\T32
+
+PBI=replace_pbilinea
+replace_pbilineb
+replace_pbilinec
+
+; Config T32 Intercom Access via UDP
+;replace_icnetassist
+;replace_icpacklen
+;replace_icport
+
+; Printer settings
+PRINTER=WINDOWS
+
+SCREEN=
+VICON
+;replace_header
+
+$INCLUDE replace_t32_dir/target_device.t32

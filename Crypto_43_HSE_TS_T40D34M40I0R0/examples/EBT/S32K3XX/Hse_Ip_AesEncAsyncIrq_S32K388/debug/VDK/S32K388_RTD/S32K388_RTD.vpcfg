@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<com.synopsys.vp.base.vpcfg.core:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.synopsys.vp.base.vpcfg.core="com.synopsys.vp.base.vpcfg.core.model" vdksys="" simDir="" simExe="" simArgs="--cwr_wait" unevaledParamFileVDKC="" unevaledParamFilePCT="" evaledParamFile="" readOnly="false" description="RTD SW test run setup" vpScript="$vpconfigDir/scripts/vpscript.py" clearVPScriptInterp="false">
+  <environmentVariables name="core_name" defaultValue="CM7_0"/>
+  <debugInfo traceSimOutput="true"/>
+  <paramOverrides key="S32K388_System.#EXTRA_PROPERTIES#/DWSLL/snps_tlm.Cockpit.DisplayCockpit" value="no"/>
+  <paramOverrides key="S32K388_System.#EXTRA_PROPERTIES#/DWSLL/snps_tlm.Cockpit_disabled" value="true"/>
+  <paramOverrides key="S32K388_System.S32K388_MCU.CPU_SS.#EXTRA_PROPERTIES#/ImageInfo/initial_image" value="{../../vpconfigs/S32K388_RTD/binaries/RTD_dummy_image.elf,0x0} "/>
+  <paramOverrides key="S32K388_System.S32K388_MCU.Security_Device_GPRs.HSE_B_SS.#EXTRA_PROPERTIES#HSE_M0PLUS_initial_image" value="{../../software/BootUp/src/image_CM0PLUS.axf} "/>
+  <monitorSets name="Default" path="$vpconfigDir\Default.monitors" chartDisplayScript="">
+    <startTrigger type="TIME" value="0"/>
+  </monitorSets>
+</com.synopsys.vp.base.vpcfg.core:Configuration>

@@ -1,0 +1,65 @@
+
+Name: generate_PC/Crypto_43_HSE_VersionCheck_Inc.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422418691582869743756152341826777155147505792848193
+ 1457479243020530233913766129706887524881240034840281
+
+Name: config/Crypto_43_HSE.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422557777010538682087346077337038170254015489539699
+ 3151990449322739639483038735904126750445622951997512
+
+Name: generate_PC/include/Hse_Ip_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422248297386174052553993928869012346879394090136931
+ 4999693652927252337990769370233882090397071663000503
+
+Name: generate_PC/src/Hse_Ip_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377422950865264607815576931030898712385700717223732160
+ 0027417529068937661666478479719268389487019660900577
+
+Name: generate_swcd/swcd/Crypto_43_HSE_Bswmd.arxml
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 74155374890374874985842384392776117164478970258532798967369
+ 38235751654844637472232954610839034954707624149166255124
+
+Name: generate_PC/Crypto_43_HSE_VersionCheck_Src.m
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594741880851275511937354144666193511707553239159466254
+ 004215831106483275262496836638331618527244943586055948
+
+Name: generate_PC/include/Crypto_43_HSE_Cfg.h
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 28964594773966130817623529938264142479532254515377259556512
+ 041657909712441383613527975918203190791667323528718691
+
+Name: config_ext/Crypto_43_HSERecConfiguration_SupportedPrimitives_Sta
+ ndard.xdm
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377426718034732308785345982775329389605719850101012728
+ 5556428143251124373940687654935468381376952966869933
+
+Name: generate_PC/src/Crypto_43_HSE_Cfg.c
+SignatureKeyID: Freescale
+SignatureKeyProviderID: dreisoft.tresos.launcher2.CryptoKeyProvider
+SignatureAlgorithmID: DSA
+Signature: 11313377421045059062410519453301413313718884092526436969249
+ 0502912934958840132184199682859997456173347610663141
+

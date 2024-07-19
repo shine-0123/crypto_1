@@ -1,0 +1,556 @@
+<?xml version='1.0'?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Crypto_43_HSE</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES>
+          <SHORT-NAME>Crypto</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/ArReleaseMajorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/ArReleaseMinorVersion</DEFINITION-REF>
+                  <VALUE>7</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/ArReleaseRevisionVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/ModuleId</DEFINITION-REF>
+                  <VALUE>114</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/SwMajorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/SwMinorVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/SwPatchVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/VendorApiInfix</DEFINITION-REF>
+                  <VALUE>HSE</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CommonPublishedInformation/VendorId</DEFINITION-REF>
+                  <VALUE>43</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoDriverObjects</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CDO_HSE_Symmetric</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoDriverObjectId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveType</DEFINITION-REF>
+                      <VALUE>CRYPTO_SYMMETRIC_ALGORITHMS</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoQueueSize</DEFINITION-REF>
+                      <VALUE>6</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/MuInstance</DEFINITION-REF>
+                      <VALUE>MU_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_AES128_Encrypt</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_AES128_Decrypt</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_CMAC_Generate</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_CMAC_Verify</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_HASH_SHA1</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoDriverObjects/CryptoDriverObject/CryptoPrimitiveRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoPrimitives/CryptoPrimitive_HASH_SHA2_256</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoAsyncJobProcessMethod</DEFINITION-REF>
+                  <VALUE>POLLING</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoDevErrorDetect</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoEnableFeedHseDesc</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoEnableRedirection</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoEnableTCMSupport</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoEnableUserModeSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoInputLengthAndOutputLengthPtrForFastCmacJobsUseBits</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoInstanceId</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoMulticoreSupport</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoTimeoutDuration</DEFINITION-REF>
+                  <VALUE>1000000000</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoTimeoutMethod</DEFINITION-REF>
+                  <VALUE>OSIF_COUNTER_DUMMY</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/CryptoVersionInfoApi</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/HseFwType</DEFINITION-REF>
+                  <VALUE>STANDARD</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoGeneral/HseIpDevErrorDetect</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoKeyElements</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>Crypto_KE_AES128</SHORT-NAME>
+                  <INDEX>0</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementAllowPartialAccess</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementFormat</DEFINITION-REF>
+                      <VALUE>CRYPTO_KE_FORMAT_BIN_RSA_PRIVATEKEY</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementInitValue</DEFINITION-REF>
+                      <VALUE></VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementPersist</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementReadAccess</DEFINITION-REF>
+                      <VALUE>CRYPTO_RA_DENIED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementSize</DEFINITION-REF>
+                      <VALUE>64</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/CryptoKeyElementWriteAccess</DEFINITION-REF>
+                      <VALUE>CRYPTO_WA_ALLOWED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseEccCurveId</DEFINITION-REF>
+                      <VALUE>ECC_CURVE_NONE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyCounter</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeySlot</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseSMRFlags</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/UseHseKey</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyCatalogGroupRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/RamKeyGroup_AES</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>HseKeyFlag_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags/HseKeyFlag</DEFINITION-REF>
+                          <VALUE>USAGE_ENCRYPT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>HseKeyFlag_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags/HseKeyFlag</DEFINITION-REF>
+                          <VALUE>USAGE_DECRYPT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>HseKeyFlag_2</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags/HseKeyFlag</DEFINITION-REF>
+                          <VALUE>USAGE_SIGN</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>HseKeyFlag_3</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyElements/CryptoKeyElement/HseKeyFlags/HseKeyFlag</DEFINITION-REF>
+                          <VALUE>USAGE_VERIFY</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoKeyTypes</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyTypes</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>Crypto_KT_AES128</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyTypes/CryptoKeyType</DEFINITION-REF>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeyTypes/CryptoKeyType/CryptoKeyElementRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoKeyElements/Crypto_KE_AES128</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoKeys</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeys</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>Crypto_Key_HSE_AES128</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeys/CryptoKey</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeys/CryptoKey/CryptoKeyId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoKeys/CryptoKey/CryptoKeyTypeRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Crypto_43_HSE/Crypto/CryptoKeyTypes/Crypto_KT_AES128</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>CryptoPrimitives</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_AES128_Decrypt</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_AES</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_ECB</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_DECRYPT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_AES128_Encrypt</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_AES</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_ECB</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_ENCRYPT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_CMAC_Generate</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_AES</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_CMAC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_MACGENERATE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_CMAC_Verify</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_AES</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_CMAC</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_MACVERIFY</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_HASH_SHA1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_SHA1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_HASH</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CryptoPrimitive_HASH_SHA2_256</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_SHA2_256</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmMode</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOMODE_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveAlgorithmSecondaryFamily</DEFINITION-REF>
+                      <VALUE>CRYPTO_ALGOFAM_NOT_SET</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/CryptoPrimitives/CryptoPrimitive/CryptoPrimitiveService</DEFINITION-REF>
+                      <VALUE>CRYPTO_HASH</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>NvmKeyGroup_AES</SHORT-NAME>
+              <INDEX>0</INDEX>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/KeyOwner</DEFINITION-REF>
+                  <VALUE>OWNER_CUST</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/KeyType</DEFINITION-REF>
+                  <VALUE>AES</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/MaxKeyBitLen</DEFINITION-REF>
+                  <VALUE>128</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/NumOfKeySlots</DEFINITION-REF>
+                  <VALUE>10</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>MuMask_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/MuMask</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/MuMask/MU</DEFINITION-REF>
+                      <VALUE>MU_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>MuMask_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/MuMask</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/NvmKeyCatalog/MuMask/MU</DEFINITION-REF>
+                      <VALUE>MU_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>RamKeyGroup_AES</SHORT-NAME>
+              <INDEX>0</INDEX>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/KeyOwner</DEFINITION-REF>
+                  <VALUE>OWNER_ANY</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/KeyType</DEFINITION-REF>
+                  <VALUE>AES</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/MaxKeyBitLen</DEFINITION-REF>
+                  <VALUE>128</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/NumOfKeySlots</DEFINITION-REF>
+                  <VALUE>20</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>MuMask_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/MuMask</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/MuMask/MU</DEFINITION-REF>
+                      <VALUE>MU_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>MuMask_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/MuMask</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto/RamKeyCatalog/MuMask/MU</DEFINITION-REF>
+                      <VALUE>MU_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

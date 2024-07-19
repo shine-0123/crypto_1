@@ -1,0 +1,1921 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+<!--
+*   @file    CryptoRecConfiguration_SupportedPrimitives.xdm
+*   @version 4.0.0
+*
+*   @brief   AUTOSAR Crypto - Tresos Studio plugin schema file
+*   @details This file contains the schema configuration for Crypto Tresos Studio plugin.
+-->
+<!--
+====================================================================================================
+*   Project              : RTD AUTOSAR 4.7
+*   Platform             : CORTEXM
+*   Peripheral           : HSE
+*   Dependencies         : none
+*
+*   Autosar Version      : 4.7.0
+*   Autosar Revision     : ASR_REL_4_7_REV_0000
+*   Autosar Conf.Variant :
+*   SW Version           : 4.0.0
+*   Build Version        : S32K3_RTD_4_0_0_P16_D2403_ASR_REL_4_7_REV_0000_20240328
+
+*   Copyright 2020 - 2024 NXP
+====================================================================================================
+-->
+
+    <d:ctr type="AUTOSAR" factory="autosar" 
+             xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+             xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+             xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+        <d:lst type="TOP-LEVEL-PACKAGES">
+            <d:ctr name="Crypto_43_HSE" type="AR-PACKAGE">
+                <d:lst type="ELEMENTS">
+                    <d:chc name="Crypto" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+                        <d:ctr type="MODULE-CONFIGURATION">
+                            <a:a name="DEF" value="ASPath:/Crypto_43_HSE_TS_T40D34M40I0R0/Crypto"/>
+
+                            <d:ctr name="CryptoGeneral" type="IDENTIFIABLE">
+                                <d:var name="HseFwType" type="ENUMERATION" value="STANDARD"/>
+                            </d:ctr>
+
+                            <d:lst name="CryptoPrimitives" type="MAP">
+                                <d:ctr name="HASH" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="SHA1_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_224_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_256_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_384_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_224_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_256_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_224_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_256_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_384_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_512_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_HASH"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="MACGENERATE" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_CMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CUSTOM_FAST_CMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/MACGENERATE/FAST_CMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_GMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_GMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA1_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_384_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_384_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_512_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CBC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CBC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP">
+                                        <d:ctr name="FAST_CMAC" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmModeCustomId" type="INTEGER" value="128"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                </d:ctr>
+                                <d:ctr name="MACVERIFY" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_CMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CUSTOM_FAST_CMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/MACVERIFY/FAST_CMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_GMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_GMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA1_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_384_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA2_512_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_224_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_224"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_256_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_256"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_384_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_384"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="SHA3_512_HMAC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA3_512"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_HMAC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CBC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CBC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_MACVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP">
+                                        <d:ctr name="FAST_CMAC" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmModeCustomId" type="INTEGER" value="128"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                </d:ctr>
+                                <d:ctr name="ENCRYPT" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_CBC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CBC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CFB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CFB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CTR_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CTR"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_ECB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_ECB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_OFB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_OFB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_PKCS1_v1_5_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_ENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="DECRYPT" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_CBC_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CBC"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CFB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CFB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_CTR_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CTR"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_ECB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_ECB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="AES_OFB_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_OFB"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_OAEP_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_OAEP"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSAES_PKCS1_v1_5_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSAES_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_DECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="AEADENCRYPT" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_GCM_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_GCM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_AEADENCRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="AEADDECRYPT" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="AES_GCM_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_AES"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_GCM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_AEADDECRYPT"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="SIGNATUREGENERATE" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="ECCNIST_NS_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ED25519_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ED25519"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="CUSTOM_ED25519PH_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/SIGNATUREGENERATE/ED25519PH"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP">
+                                        <d:ctr name="ED25519PH" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmFamilyCustomId" type="INTEGER" value="129"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="SIGNATUREVERIFY" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="ECCNIST_NS_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ECCNIST_NS_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ECCNIST"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="ED25519_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_ED25519"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="CUSTOM_ED25519PH_NS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_NOT_SET"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/SIGNATUREVERIFY/ED25519PH"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PKCS1_v1_5_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PKCS1_v1_5"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA1" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA1"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_384" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_384"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512_224" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_224"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RSA_RSASSA_PSS_SHA2_512_256" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RSA"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_RSASSA_PSS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_SHA2_512_256"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_SIGNATUREVERIFY"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP">
+                                        <d:ctr name="ED25519PH" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmFamilyCustomId" type="INTEGER" value="129"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP"/>
+                                </d:ctr>
+                                <d:ctr name="RANDOMGENERATE" type="IDENTIFIABLE">
+                                    <d:lst name="CryptoPrimitive" type="MAP">
+                                        <d:ctr name="RNG_CTRDRBG_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RNG"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CTRDRBG"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_RANDOMGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RNG_CUSTOM_DRBG_PR_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RNG"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_RANDOMGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/RANDOMGENERATE/DRBG_PR"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                        <d:ctr name="RNG_CUSTOM_DRBG_RS_NS" type="IDENTIFIABLE">
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_RNG"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmMode">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOMODE_CUSTOM"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamily">
+                                                <d:var type="ENUMERATION" value="CRYPTO_ALGOFAM_NOT_SET"/>
+                                            </d:lst>
+                                            <d:var name="CryptoPrimitiveService" type="ENUMERATION" value="CRYPTO_RANDOMGENERATE"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmFamilyCustomRef"/>
+                                            <d:lst name="CryptoPrimitiveAlgorithmModeCustomRef">
+                                                <d:ref type="REFERENCE" value="ASPath:/Crypto_43_HSE/Crypto/RANDOMGENERATE/DRBG_RS"/>
+                                            </d:lst>
+                                            <d:lst name="CryptoPrimitiveAlgorithmSecondaryFamilyCustomRef"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                    <d:lst name="CryptoPrimitiveAlgorithmFamilyCustom" type="MAP"/>
+                                    <d:lst name="CryptoPrimitiveAlgorithmModeCustom" type="MAP">
+                                        <d:ctr name="DRBG_PR" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmModeCustomId" type="INTEGER" value="130"/>
+                                        </d:ctr>
+                                        <d:ctr name="DRBG_RS" type="IDENTIFIABLE">
+                                            <d:var name="CryptoPrimitiveAlgorithmModeCustomId" type="INTEGER" value="131"/>
+                                        </d:ctr>
+                                    </d:lst>
+                                </d:ctr>
+                            </d:lst>
+
+                        </d:ctr>
+                    </d:chc>
+                </d:lst>
+            </d:ctr>
+        </d:lst>
+    </d:ctr>
+</datamodel>
+
